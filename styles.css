@@ -17,16 +17,13 @@ body {
 #drum-machine {
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: row;  
   background-color: white;
   background-color: #A7CCB0;
   background-color: #829E88;
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
   border-radius: 10px;
   padding: 20px;
-  
-/*  overflow: hidden;*/
 }
 
 #pad {
@@ -42,12 +39,9 @@ body {
 
 .drum-pad {    
   background-color: lightcoral;
-/*  background-color: rgb(235, 89, 56);*/
-  background-color: #EB7B38;
-  
+  background-color: #EB7B38;  
   border-radius: 10px;
-  border: 5px solid transparent;  
-/*  border: 5px solid #5CFA77a0;*/
+  border: 5px solid transparent;
   box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.5);
 }
 
@@ -110,20 +104,14 @@ body {
 
 #display {
   width: 100%;
-/*  height: 100px;*/
   background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
-/*  margin-top: 15%;*/
-/*  border: 20px solid rgba(0,0,0,0.3);*/
   border: 20px ridge gray;
   padding: 10px;
-  padding-left: 15px;  
-  
-/*  box-shadow: 5px 2px 8px 2px rgba(0,0,0,0.3);*/
+  padding-left: 15px;
 }
 
 #display span {
-/*  text-align: center;*/
   display: block;
   width: auto;  
   margin: 0 auto;
@@ -132,8 +120,7 @@ body {
   text-transform: uppercase;
   font-family: 'Orbitron', sans-serif;
   color: #5CFA77;
-  letter-spacing: 0.2rem;
-  
+  letter-spacing: 0.2rem;  
   animation: 0.3s 1 normal flash;
 }
 
@@ -150,10 +137,8 @@ h1 span {
   font-size: 3rem;
   vertical-align: top;
   color: crimson;
-/*  color: #F50A2E;*/
   transform: rotate(45deg); 
-  margin-left: 5px;
-  
+  margin-left: 5px;  
   border-radius: 10px;
   transition: .2s, ease-all;
 }
@@ -175,11 +160,9 @@ h1 span:hover {
   justify-content:space-evenly;
 }
 
-.knob-wrapper {
-  width: 130px;  height: 130px; 
-  
-  width: 160px;  height: 160px; 
-
+.knob-wrapper {   
+  width: 160px;  
+  height: 160px;
 }
 
 .scale {
@@ -187,8 +170,6 @@ h1 span:hover {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-/*  border-top: 10px solid white;*/
-/*  overflow: hidden;*/
   border: 1px solid transparent;
   background-color: lightgray;    
   cursor: default;
@@ -210,25 +191,13 @@ h1 span:hover {
   height: 70%;
   border-radius: 50%;
   background-color: darkslategray;
-  background: radial-gradient(darkslategray, 80%, black);
-  
-  
+  background: radial-gradient(darkslategray, 80%, black);  
   top: 0;
   bottom: 0;  
   left: 0; 
   right: 0; 
-  margin: auto;  
-/*  margin: -50% auto;*/
+  margin: auto;
   z-index: 12;
-  
-/*
-  border-left: 1px solid lightgray;
-  border-top: 1px solid lightgray;
-*/
-/*
-  box-shadow: 5px 7px 10px 5px rgba(0,0,0,0.4);
-  box-shadow: 5px 7px 10px 3px rgba(0,0,0,0.4);
-*/
   user-select: none;
 }
 
@@ -237,9 +206,6 @@ h1 span:hover {
   width: 70%;
   height: 70%;
   background-color: whaite;
-  
-  
-  
   top: 0;
   bottom: 0;  
   left: 0; 
@@ -250,11 +216,6 @@ h1 span:hover {
 }
 
 .knob-header {
-/*  position: absolute;*/
-/*  bottom: 0;  */
-/*  left: 0; */
-/*  right: 0; */
-/*  margin: auto;   */
   margin: -13% auto 0 auto;
   background-color: rgba(255,255,255,0.2);
   background-color: #829E88;
@@ -272,13 +233,11 @@ h1 span:hover {
   width: 7%;
   height: 20%;
   margin: 0 auto;  
-  background-color: white;
-  
+  background-color: white;  
 }
 
 @keyframes flash {
   0% {
-/*    color: #76FF8A;*/
     color: white;
   }
   

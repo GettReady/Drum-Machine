@@ -48,7 +48,6 @@ const pads = [
 
 const keySequence = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
 
-// const angleUnit = 180 / 200;
 const angleUnit = 270 / 200;
 
 class App extends React.Component {
@@ -59,22 +58,16 @@ class App extends React.Component {
 
   componentDidMount() {    
     document.addEventListener('keydown', this.checkKeyPressed);
-    // document.addEventListener('keyup', this.checkKeyPressed);
   }
 
   componentWillUnmount() {
     document.removeEventListener('keydown', this.checkKeyPressed);
-    // document.removeEventListener('keyup', this.checkKeyPressed);
   }  
 
   playAudioByIndex = (index) => {    
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //    Large performance issues might appear here
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
     let audio = new Audio(pads[index].audioSource);
     audio.volume = this.state.audioVolume;
     audio.playbackRate = this.state.playbackRate;
-    // let audio = new Audio({ loop: false, volume: this.state.audioVolume, src: pads[index].audioSource });
     audio.play();    
 
     let element = document.getElementById('display').children[0];    
@@ -140,7 +133,6 @@ class App extends React.Component {
           </div>
           <div id="controls">   
             <div className="v-section">
-              {/* <h2>Active pad display</h2> */}
               <div id="display">
                 <span>{this.state.activePad}</span>              
               </div>              
@@ -208,7 +200,6 @@ class ControlKnob extends React.Component {
     );
   }
 }
-
 
 const container = document.getElementById("page-wrapper");
 const root = ReactDOM.createRoot(container);
