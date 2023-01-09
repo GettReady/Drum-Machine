@@ -143,17 +143,6 @@ h1 span {
   transition: .2s, ease-all;
 }
 
-h1 span:hover {
-  background-color: white;
-  padding: 0 10px;
-  margin-left: 0;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
-  color: red;
-  transition: .3s, ease-all;
-}
-
 .h-section {
   display: flex;
   flex-direction: row;
