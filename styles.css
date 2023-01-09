@@ -137,8 +137,7 @@ h1 span {
   font-size: 3rem;
   vertical-align: top;
   color: crimson;
-  transform: rotate(45deg); 
-  margin-left: 5px;  
+  transform: rotate(45deg);
   border-radius: 10px;
   transition: .2s, ease-all;
 }
